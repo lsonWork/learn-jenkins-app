@@ -74,11 +74,11 @@ pipeline {
                             publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'playwright-report', reportFiles: 'index.html', reportName: 'Playwright Local', reportTitles: '', useWrapperFileDirectly: true])
                         }
                     }
-                    steps {
-                        sh '''
-                            echo 'demo e2e'
-                        '''
-                    }
+                    // steps {
+                    //     sh '''
+                    //         echo 'demo e2e'
+                    //     '''
+                    // }
                 }
             }
         }
@@ -195,11 +195,11 @@ pipeline {
                     publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'playwright-report', reportFiles: 'index.html', reportName: 'Prod E2E', reportTitles: '', useWrapperFileDirectly: true])
                 }
             }
-            steps {
-                sh '''
-                    echo 'demo prod e2e'
-                '''
-            }
+            // steps {
+            //     sh '''
+            //         echo 'demo prod e2e'
+            //     '''
+            // }
         }
     }
 }
